@@ -3,7 +3,7 @@ variable "cosmos_databases_per_environment" {
   type = map(object({
     collections = map(object({
       shard_key           = string,
-      default_ttl_seconds = number,
+      default_ttl_seconds = optional(number, -1),
       indexes = map(object({
         key_list  = set(string),
         is_unique = bool
