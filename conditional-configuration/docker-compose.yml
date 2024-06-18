@@ -1,0 +1,7 @@
+services:
+  terraform:
+    build: .
+    volumes:
+      - .:/terraform
+    stdin_open: true
+    tty: true

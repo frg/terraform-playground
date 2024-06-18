@@ -1,11 +1,13 @@
-# Variable Map Test
+# Variable Map PoC
+
+A PoC exploring the available flexibility regarding optional values w/ defaults
 
 Spin up the container
 ```bash
 docker-compose up --build -d
 ```
 
-Spin up the container
+Open a shell in the container
 ```bash
 docker exec -it $(docker-compose ps -q terraform) /bin/bash
 ```
